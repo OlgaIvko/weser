@@ -1,0 +1,107 @@
+.btn {
+  display: inline-block;
+  padding: 18px 38px;
+  font-family: var(--montserrat);
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-weight: var(--bold);
+  color: var(--white);
+  background-color: var(--orange);
+  transition: background-color var(--short);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:focus {
+  background-color: var(--orang-trans);
+}
+
+.btn:active {
+  background-color: var(--dark-orange);
+}
+
+.btn-big {
+  max-width: 400px;
+  padding: 24px 35px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.btn--border-accent {
+  color: var(--white);
+  border: 3px solid var(--orange);
+  background-color: transparent;
+  transition: background-color var(--short) border-color var(--short),
+    color var(--short);
+}
+
+.btn--border-accent:active {
+  border-color: var(--dark-orange);
+  background-color: var(--dark-orange);
+}
+
+.btn--border-accent:focus {
+  background-color: var(--orange);
+}
+
+.btn--border {
+  font-weight: var(--regular);
+  color: var(--dark);
+  border: 1px solid var(--dark);
+  background-color: transparent;
+  transition-property: color, background-color, border-color;
+  transition-duration: var(--short);
+}
+
+.btn--border:focus {
+  border-color: var(--dark-gray);
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+.btn--border:active {
+  background-color: var(--black);
+  border-color: var(--black);
+}
+
+@media (max-width: 576px) {
+  .btn {
+    padding: 13px 27px;
+    font-size: 12px;
+    line-height: 15px;
+  }
+  .btn--border-accent {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-width: 2px;
+    color: var(--orange);
+  }
+
+  .btn--border-accent:active {
+    border-color: var(--dark-orange);
+    background-color: var(--dark-orange);
+  }
+
+  .btn--border-accent:focus {
+    color: var(--white);
+  }
+}
+
+@media (any-hover: hover) {
+  .btn:hover {
+    background-color: var(--orang-trans);
+  }
+  .btn--border-accent:hover {
+    background-color: var(--orange);
+  }
+  .btn--border:hover {
+    border-color: var(--dark-gray);
+    color: var(--white);
+    background-color: var(--dark-gray);
+  }
+  .btn--border-accent:hover {
+    color: var(--white);
+  }
+}

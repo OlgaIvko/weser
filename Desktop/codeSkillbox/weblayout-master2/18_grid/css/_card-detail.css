@@ -1,0 +1,120 @@
+.card-detail {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  max-width: 870px;
+  min-height: 622px;
+  width: 100%;
+  background-color: var(--gree);
+  background-image: url('../img3/work.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.card-detail__content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 49px 51px 51px 51px;
+  color: var(--white);
+  background-color: var(--dark-transp);
+}
+
+.card-detail-text {
+  max-width: 455px;
+  margin-right: 40px;
+  margin: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: var(--bold);
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.card-detail__btn {
+  margin-left: auto;
+}
+
+@media (max-width: 1440px) {
+  .card-detail {
+    max-width: 100%;
+    min-height: 639px;
+  }
+
+  .card-detail__content {
+    padding: 50px;
+  }
+  .card-detail__btn {
+    padding: 18px 34px;
+  }
+}
+
+@media (max-width: 962px) {
+  .card-detail__content {
+    padding: 34px 40px;
+  }
+
+  .card-detail-text {
+    max-width: 366px;
+  }
+
+  .card-detail {
+    max-width: 100%;
+    min-height: 650px;
+  }
+
+  .card-detail__content {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  .card-detail-text {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+
+  .card-detail__btn {
+    margin-top: 11px;
+    margin-left: 0;
+    padding: 11px 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .card-detail {
+    display: block;
+    min-height: auto;
+    background-size: 0;
+    background-image: url('../img3/work576.jpg');
+    background-color: transparent;
+  }
+  .card-detail::before {
+    content: '';
+    display: block;
+    width: 100%;
+    margin-bottom: 8px;
+    padding-top: calc(200 / 290 * 100%);
+    background-color: var(--gree);
+    background-image: inherit;
+    background-size: cover;
+    background-position: center;
+  }
+  .card-detail__content {
+    padding: 0;
+    color: var(--dark);
+    background-color: transparent;
+  }
+
+  .card-detail-text {
+    margin-bottom: 11px;
+    font-size: 14px;
+    line-height: 28px;
+    font-weight: var(--regular);
+  }
+
+  .card-detail__btn {
+    min-width: 161px;
+  }
+}

@@ -1,0 +1,259 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  min-width: 1200px;
+  font-family: 'font', sans-serif;
+  background: #e5e5e5;
+}
+
+/*glob*/
+
+.section-p {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+.reset-list {
+  padding: 0;
+  list-style: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.header-bottom {
+  width: 1200px;
+  height: 70px;
+  margin: 0;
+  padding: 0;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+
+.section-title {
+  padding-top: 0px;
+  padding-left: 40px;
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.btn {
+  cursor: pointer;
+  background-color: #fff;
+  min-width: 67px;
+  min-height: 16px;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 1px;
+  border-radius: 12px;
+  border: 1px solid #cc9933;
+  color: #cc9933;
+}
+
+.header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.header-tel {
+  justify-content: end;
+}
+
+.navigation {
+  flex-wrap: wrap;
+}
+
+.header-btrs-wrap {
+  padding-top: 22px;
+}
+
+.header-button-btn {
+  margin-left: 45px;
+}
+
+.menu-item {
+  margin: 0;
+  margin-left: 45px;
+  color: #666666;
+}
+
+.header-info {
+  flex-wrap: wrap;
+  min-width: 700px;
+  padding-top: 17px;
+  height: 54px;
+}
+
+.header-accont {
+  padding-top: 17px;
+}
+
+.haeder-top {
+  margin-bottom: 30px;
+}
+
+/*spesials*/
+
+.specials-wrap {
+  width: 1200;
+  min-height: 600px;
+  margin-bottom: 70px;
+}
+
+.special-card {
+  width: 573px;
+  height: 258px;
+}
+.special-card2 {
+  width: 573px;
+  height: 540px;
+}
+
+.special-card:not(:last-child) {
+  margin-bottom: 24px;
+}
+.special-coulm {
+  flex-wrap: wrap;
+}
+
+.special-coulm:not(:last-child) {
+  margin-right: 24px;
+}
+
+/*abut*/
+
+.container2 {
+  width: 888px;
+  min-height: 252px;
+  padding: 10px 10px 10px 0;
+}
+
+/*servisis title*/
+
+.container3 {
+  width: 1200px;
+  min-height: 744px;
+  margin-bottom: 70px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.services-item {
+  width: 573px;
+  min-height: 330px;
+  margin-bottom: 24px;
+  margin-right: auto;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-color: #fff;
+}
+
+.services-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.services-list {
+  flex-wrap: wrap;
+}
+
+.services-item-title {
+  padding: 191px 165px 3px 45px;
+  color: #cc9933;
+}
+
+.services-item-title2 {
+  padding: 0 165px 35px 45px;
+}
+
+/*container4*/
+
+.benefits-list {
+  flex-wrap: wrap;
+  margin-top: 23px;
+}
+
+.benefits-card {
+  width: 275px;
+  min-height: 276px;
+  margin-left: 0;
+  margin-bottom: 22px;
+  padding: 40px 42px 41px 45px;
+  background-repeat: no-repeat;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.benefits-card:not(:nth-child(4n)) {
+  margin-right: 23px;
+}
+
+/*hotels*/
+
+.hotels-list {
+  flex-wrap: wrap;
+}
+
+.hotels-list {
+  align-items: stretch;
+  /* justify-content: space-between; */
+  margin: 0 auto;
+}
+.hotel-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.hotel-item {
+  width: 374px;
+  height: 440px;
+  margin-right: auto;
+  margin-bottom: 23px;
+  border-radius: 15px;
+  background-color: #fff;
+}
+
+.hotel-title {
+  padding-left: 45px;
+}
+
+.hotel-top-info {
+  padding-left: 45px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}

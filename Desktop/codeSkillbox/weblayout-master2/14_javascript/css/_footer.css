@@ -1,0 +1,147 @@
+.footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: var(--lightgrey);
+  background-color: var(--dark-bg);
+}
+
+.footer__nav {
+  max-width: 300px;
+  margin-right: 6%;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__logo {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  width: 224px;
+  min-height: 72px;
+}
+
+.footer__menu {
+  margin-bottom: 90px;
+  font-weight: var(--semibold);
+  font-size: 18px;
+  line-height: 36px;
+}
+
+.footer__menu-link {
+  transition: color var(--short);
+  outline: none;
+}
+
+.footer__menu-link:focus:not(:active) {
+  outline: 2px solid var(--orange);
+  outline-offset: 3px;
+}
+
+.footer__menu-link:active {
+  color: var(--dark-orange);
+}
+
+.footer__feedback {
+  width: calc(570 / 1770 * 100%);
+  height: 100%;
+}
+
+.footer__about {
+  width: calc(363 / 1770 * 100%);
+  padding-top: 87px;
+}
+
+@media (max-width: 1440px) {
+  .footer__about {
+    display: none;
+  }
+  .footer__container {
+    justify-content: flex-start;
+  }
+
+  .footer__nav {
+    margin-right: calc(132 / 924 * 100%);
+  }
+
+  .footer__feedback {
+    width: calc(541 / 924 * 100%);
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer__nav {
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 962px) {
+  .footer__menu {
+    display: none;
+  }
+
+  .footer__nav {
+    margin-right: 0;
+  }
+
+  .footer__container {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .footer__feedback {
+    width: 100%;
+    max-width: 541px;
+    margin-bottom: 50px;
+  }
+
+  .footer__logo {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 800px) {
+  .footer__container {
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .footer__logo {
+    margin-bottom: 15px;
+  }
+
+  .footer__nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__logo {
+    width: 131px;
+    min-height: 42px;
+    margin-bottom: 17px;
+  }
+  .footer__container {
+    align-items: center;
+  }
+
+  .footer__feedback {
+    margin-bottom: 16px;
+    border-bottom: 1px solid var(--middle-dark-gray);
+    padding-bottom: 16px;
+  }
+}
+
+@media (any-hover: hover) {
+  .footer__menu-link:hover {
+    color: var(--orange);
+  }
+}
