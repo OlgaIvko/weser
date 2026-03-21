@@ -1,0 +1,686 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Твой Путь – поддержка для зависимых и созависимых</title>
+    <meta
+      name="description"
+      content="Мобильное приложение для преодоления зависимостей. Анонимные форумы, чат с ИИ, трекеры настроения и дней трезвости. Скачай бесплатно!"
+    />
+    <meta
+      name="keywords"
+      content="зависимость, созависимость, помощь, поддержка, анонимно, форум, группы, приложение, реабилитация"
+    />
+    <meta name="author" content="ООО Цифровая земля" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourdomain.ru/" />
+    <meta
+      property="og:title"
+      content="Твой Путь – приложение для преодоления зависимостей"
+    />
+    <meta
+      property="og:description"
+      content="Анонимная помощь и поддержка 24/7. Скачай бесплатно!"
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.ru/img/og-image.jpg"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="canonical" href="https://yourdomain.ru/" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container nav">
+         <div class="container">
+        <nav class="nav">
+          <div class="nav__logo">
+          <a href="#" class="nav__logo--block">
+            <img
+              src="img/logo.png"
+              alt="logo"
+              width="90px"
+              height="70px"
+              loading="lazy"
+            />
+
+
+        <a href="#" class="nav__logo--block">
+          <span class="nav__logo">Твой</span>
+          <span class="nav__logo nav__logo-accent">Путь</span>
+        </a>
+</div>
+        <div class="nav__menu" id="navMenu">
+          <button class="nav__close" id="navClose">
+            <i class="fas fa-times"></i>
+          </button>
+          <a href="#hero" class="nav__link">Главная</a>
+          <a href="#problems" class="nav__link">Проблемы</a>
+          <a href="#solution" class="nav__link">Решение</a>
+          <a href="#gallery" class="nav__link">Скриншоты</a>
+          <a href="#faq" class="nav__link">FAQ</a>
+          <a href="#" class="nav__link nav__link--primary" id="openModalBtn"
+            >Связаться</a
+          >
+        </div>
+        <button class="nav__toggle" id="navToggle">
+          <span class="nav__toggle-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Hero секция со слайдером -->
+    <section class="hero" id="hero">
+      <div class="hero__wrapper">
+        <div class="hero__text">
+          <h1 class="hero__title">
+            Чувствуете, что
+            <span class="hero__title-accent"
+              >одиночество <i class="fas fa-heartbeat"></i
+            ></span>
+            затягивает?
+          </h1>
+          <p class="hero__subtitle">
+            Твой Путь — приложение, где вы найдёте поддержку, понимание и
+            реальную помощь. Анонимно, безопасно, 24/7.
+          </p>
+          <div class="hero__stats">
+            <div class="hero__stat">
+              <div class="hero__stat-icon stat-icon--1">
+                <i class="fas fa-users"></i>
+              </div>
+              <div class="hero__stat-text">Сообщество</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-icon stat-icon--2">
+                <i class="fas fa-people-group"></i>
+              </div>
+              <div class="hero__stat-text">Группы поддержки</div>
+            </div>
+            <div class="hero__stat">
+              <div class="hero__stat-icon stat-icon--3">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div class="hero__stat-text">ИИ-помощник 24/7</div>
+            </div>
+          </div>
+          <a href="#" class="btn btn--primary" id="openModalBtn2"
+            >Получить помощь</a
+          >
+        </div>
+        <div class="hero__cards">
+          <div class="hero-cards__container">
+            <!-- Карты (скриншоты) -->
+
+            <div class="hero-card" data-card="0">
+              <img
+                src="img/books.webp"
+                alt="Скриншот 1"
+                class="hero-card__img"
+              />
+            </div>
+            <div class="hero-card" data-card="1">
+              <img
+                src="img/chat.webp"
+                alt="Скриншот 2"
+                class="hero-card__img"
+              />
+            </div>
+            <div class="hero-card" data-card="2">
+              <img
+                src="img/glavnui2.webp"
+                alt="Скриншот 3"
+                class="hero-card__img"
+              />
+            </div>
+            <div class="hero-card" data-card="3">
+              <img
+                src="img/chat.webp"
+                alt="Скриншот 4"
+                class="hero-card__img"
+              />
+            </div>
+          </div>
+          <!-- Навигация слайдера -->
+          <div class="hero-cards__nav visually-hidden">
+            <button class="hero-cards__nav-btn hero-cards__nav-btn--prev">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <div class="hero-cards__dots">
+              <button
+                class="hero-cards__dot hero-cards__dot--active"
+                data-slide="0"
+              ></button>
+              <button class="hero-cards__dot" data-slide="1"></button>
+              <button class="hero-cards__dot" data-slide="2"></button>
+              <button class="hero-cards__dot" data-slide="3"></button>
+            </div>
+            <button class="hero-cards__nav-btn hero-cards__nav-btn--next">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Проблемы -->
+    <section class="problems" id="problems">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">
+            С чем сталкиваются
+            <span class="section-header__accent">зависимые и созависимые</span>?
+          </h2>
+          <p class="section-header__subtitle">
+            Мы знаем, как это тяжело. И готовы помочь.
+          </p>
+        </div>
+        <div class="problems__grid">
+          <div class="problem-card glass-card">
+            <div class="problem-card__icon problem-icon--1">
+              <i class="fas fa-heart-broken"></i>
+            </div>
+            <h3 class="problem-card__title">Одиночество и стигма</h3>
+            <p class="problem-card__description">
+              Страх осуждения мешает обратиться за помощью. Вы чувствуете, что
+              никто не понимает.
+            </p>
+          </div>
+          <div class="problem-card glass-card">
+            <div class="problem-card__icon problem-icon--2">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 class="problem-card__title">Отсутствие поддержки 24/7</h3>
+            <p class="problem-card__description">
+              Кризис может случиться ночью, а рядом никого, кто поддержит.
+            </p>
+          </div>
+          <div class="problem-card glass-card">
+            <div class="problem-card__icon problem-icon--3">
+              <i class="fas fa-exclamation-circle"></i>
+            </div>
+            <h3 class="problem-card__title">Срывы и откаты</h3>
+            <p class="problem-card__description">
+              Без постоянного контроля и мотивации легко сорваться и потерять
+              прогресс.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Решение (возможности приложения) -->
+    <section class="solution" id="solution">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">
+            Как <span class="section-header__accent">Твой Путь</span> помогает
+          </h2>
+        </div>
+        <div class="solution-grid">
+          <div class="solution-grid__card glass-card">
+            <div class="solution-grid__icon solution-icon--1">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3 class="solution-grid__title">Анонимный форум</h3>
+            <p class="solution-grid__description">
+              Общайтесь с теми, кто понимает, без страха осуждения.
+            </p>
+          </div>
+          <div class="solution-grid__card glass-card">
+            <div class="solution-grid__icon solution-icon--2">
+              <i class="fas fa-robot"></i>
+            </div>
+            <h3 class="solution-grid__title">Чат с ИИ 24/7</h3>
+            <p class="solution-grid__description">
+              Мгновенные ответы на вопросы, советы и мотивация.
+            </p>
+            <div class="solution-grid__features">
+              <span><i class="fas fa-check-circle"></i> Без выходных</span>
+              <span><i class="fas fa-check-circle"></i> Эмпатичный</span>
+            </div>
+          </div>
+          <div class="solution-grid__card glass-card">
+            <div class="solution-grid__icon solution-icon--3">
+              <i class="fas fa-smile"></i>
+            </div>
+            <h3 class="solution-grid__title">Трекер настроения</h3>
+            <p class="solution-grid__description">
+              Отслеживайте прогресс, получайте напоминания и поддержку.
+            </p>
+            <div class="solution-grid__features">
+              <span><i class="fas fa-check-circle"></i> Дневник эмоций</span>
+              <span><i class="fas fa-check-circle"></i> Статистика</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Галерея скриншотов (сетка) -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">
+            Посмотрите, как выглядит
+            <span class="section-header__accent">приложение</span>
+          </h2>
+        </div>
+        <div class="gallery__grid">
+          <div class="gallery__item glass-card">
+            <img src="img/tiktok.webp" alt="Скриншот 4" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/dostig.webp" alt="Скриншот 1" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/forum.webp" alt="Скриншот 2" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/pomoz.webp" alt="Скриншот 3" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/rehab.webp" alt="Скриншот 4" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Преимущества -->
+    <!-- Преимущества -->
+    <section class="benefits-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-header__title">
+            Возможности, которые меняют
+            <span class="section-header__accent">жизнь</span>
+          </h2>
+          <p class="section-header__subtitle">
+            Всё, что нужно для поддержки и роста — в одном приложении
+          </p>
+        </div>
+        <div class="benefits-grid">
+          <!-- 1. Челленджи и марафоны -->
+          <div class="benefit-card glass-card">
+            <div class="benefit-icon benefit-icon--1 glass-icon">
+              <i class="fas fa-trophy"></i>
+            </div>
+            <h3 class="benefit-title">Челленджи и марафоны</h3>
+            <p class="benefit-description">
+              Еженедельные задания, уровни и награды. Помогают не срываться и
+              двигаться вперёд.
+            </p>
+          </div>
+          <!-- 2. Прямые эфиры с экспертами -->
+          <div class="benefit-card glass-card">
+            <div class="benefit-icon benefit-icon--2 glass-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3 class="benefit-title">Прямые эфиры</h3>
+            <p class="benefit-description">
+              Психологи, кураторы и приглашённые эксперты отвечают на вопросы в
+              реальном времени.
+            </p>
+          </div>
+          <!-- 3. Истории выздоровления -->
+          <div class="benefit-card glass-card">
+            <div class="benefit-icon benefit-icon--3 glass-icon">
+              <i class="fas fa-book-open"></i>
+            </div>
+            <h3 class="benefit-title">Истории выздоровления</h3>
+            <p class="benefit-description">
+              Реальные анонимные истории людей, которые справились. Вдохновляют
+              и дают надежду.
+            </p>
+          </div>
+          <!-- 4. Персональные рекомендации -->
+          <div class="benefit-card glass-card">
+            <div class="benefit-icon benefit-icon--4 glass-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
+            <h3 class="benefit-title">Рекомендации</h3>
+            <p class="benefit-description">
+              ИИ подбирает видео, книги и статьи под ваше настроение и прогресс.
+            </p>
+          </div>
+          <!-- 5. Статистика и трекинг -->
+          <div class="benefit-card glass-card">
+            <div class="benefit-icon benefit-icon--5 glass-icon">
+              <i class="fas fa-chart-line"></i>
+            </div>
+            <h3 class="benefit-title">Статистика</h3>
+            <p class="benefit-description">
+              Графики настроения, дни без срывов, динамика прогресса — всё
+              наглядно.
+            </p>
+          </div>
+          <!-- 6. Цели и напоминания -->
+          <div class="benefit-card glass-card">
+            <div class="benefit-icon benefit-icon--6 glass-icon">
+              <i class="fas fa-bullseye"></i>
+            </div>
+            <h3 class="benefit-title">Цели и напоминания</h3>
+            <p class="benefit-description">
+              Ставьте личные цели, получайте уведомления и отмечайте достижения.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<!-- Функционал: реабилитационные центры и наставники -->
+<section class="app-features-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-header__title">
+                Всё для <span class="section-header__accent">центров и наставников</span>
+            </h2>
+            <p class="section-header__subtitle">
+                Управляйте, поддерживайте, вдохновляйте — всё в одном приложении
+            </p>
+        </div>
+        <div class="app-features-scroll">
+            <div class="app-features-grid">
+                <!-- Карточка 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon--1"><i class="fas fa-building"></i></div>
+                    <h3 class="feature-title">Управление центром</h3>
+                    <p class="feature-description">Редактируйте профиль, контакты, описание центра.</p>
+                </div>
+                <!-- Карточка 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon--2"><i class="fas fa-chart-line"></i></div>
+                    <h3 class="feature-title">Статистика</h3>
+                    <p class="feature-description">Количество записей, активные и завершённые программы.</p>
+                </div>
+                <!-- Карточка 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon--3"><i class="fas fa-list-ul"></i></div>
+                    <h3 class="feature-title">Программы</h3>
+                    <p class="feature-description">Создавайте и редактируйте программы реабилитации.</p>
+                </div>
+                <!-- Карточка 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon--4"><i class="fas fa-users"></i></div>
+                    <h3 class="feature-title">Сотрудники и кураторы</h3>
+                    <p class="feature-description">Назначайте кураторов, управляйте персоналом.</p>
+                </div>
+                <!-- Карточка 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon--5"><i class="fas fa-video"></i></div>
+                    <h3 class="feature-title">Эфиры и встречи</h3>
+                    <p class="feature-description">Проводите вебинары, участники записываются.</p>
+                </div>
+                <!-- Карточка 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon--6"><i class="fas fa-heart"></i></div>
+                    <h3 class="feature-title">Истории успеха</h3>
+                    <p class="feature-description">Публикуйте вдохновляющие истории.</p>
+                </div>
+                <!-- Карточка 7 -->
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon--7"><i class="fas fa-lightbulb"></i></div>
+                    <h3 class="feature-title">Рекомендации</h3>
+                    <p class="feature-description">ИИ подбирает материалы для подопечных.</p>
+                </div>
+                <!-- Карточка 8 -->
+                <div class="feature-card">
+                    <div class="feature-icon feature-icon--8"><i class="fas fa-chalkboard-user"></i></div>
+                    <h3 class="feature-title">Кабинет куратора</h3>
+                    <p class="feature-description">Студенты, задания, запросы на сопровождение.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="gallery__grid">
+          <div class="gallery__item glass-card">
+            <img src="img/rehabglavnaya.webp" alt="Скриншот 4" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/recomendasii.webp" alt="Скриншот 1" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/rehab.webp" alt="Скриншот 2" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/zayavki.webp" alt="Скриншот 3" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/nastavnik.webp" alt="Скриншот 4" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/efir.webp" alt="Скриншот 4" />
+          </div>
+           <div class="gallery__item glass-card">
+            <img src="img/cheling.webp" alt="Скриншот 4" />
+          </div>
+           <div class="gallery__item glass-card">
+            <img src="img/pomoz.webp" alt="Скриншот 4" />
+          </div>
+           <div class="gallery__item glass-card">
+            <img src="img/zapisi.webp" alt="Скриншот 4" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/statit.webp" alt="Скриншот 4" />
+          </div>
+          <div class="gallery__item glass-card">
+            <img src="img/stat.webp" alt="Скриншот 4" />
+          </div>
+        </div>
+    <!-- FAQ (аккордеон) -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="faq-container">
+          <h2 class="faq-heading section-header__title">
+            Часто задаваемые вопросы о
+            <span class="section-header__accent">Твой Путь</span>
+            <span class="faq-heading-icon">🤔</span>
+          </h2>
+          <div class="faq-accordion">
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  ><i class="fas fa-question-circle"></i> Это действительно
+                  анонимно?</span
+                >
+                <span class="faq-icon"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </button>
+              <div class="faq-answer" aria-hidden="true">
+                <div class="faq-answer-content">
+                  Да, вы можете использовать псевдоним. Мы не передаём данные
+                  третьим лицам. Все сообщения в форумах также анонимны.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  ><i class="fas fa-question-circle"></i> Сколько стоит
+                  приложение?</span
+                >
+                <span class="faq-icon"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </button>
+              <div class="faq-answer" aria-hidden="true">
+                <div class="faq-answer-content">
+                  Базовая версия абсолютно бесплатна. Расширенные функции
+                  доступны по подписке от 299₽/мес.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  ><i class="fas fa-question-circle"></i> Есть ли поддержка
+                  кураторов?</span
+                >
+                <span class="faq-icon"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </button>
+              <div class="faq-answer" aria-hidden="true">
+                <div class="faq-answer-content">
+                  Да, вы можете общаться с кураторами в личных сообщениях. Также
+                  доступны групповые встречи с психологами.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-question" type="button" aria-expanded="false">
+                <span class="faq-question-text"
+                  ><i class="fas fa-question-circle"></i> Как скачать
+                  приложение?</span
+                >
+                <span class="faq-icon"
+                  ><i class="fas fa-chevron-down"></i
+                ></span>
+              </button>
+              <div class="faq-answer" aria-hidden="true">
+                <div class="faq-answer-content">
+                  Ссылки на скачивание в App Store и Google Play появятся после
+                  заполнения формы обратной связи – мы пришлём их на почту.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer с контактами -->
+    <footer class="footer" id="contact">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__main">
+            <div class="footer__logo">
+              <span class="footer__logo-text">Твой</span>
+              <span class="footer__logo-accent">Путь</span>
+            </div>
+            <p class="footer__tagline">Помощь всегда рядом</p>
+          </div>
+          <div class="footer__contact">
+            <h4 class="footer__links-title">Контакты</h4>
+            <p class="footer__contact-item">
+              <i class="fas fa-phone"></i> +7 (999) 700-57-98
+            </p>
+            <p class="footer__contact-item">
+              <i class="fas fa-envelope"></i> olyaly1589@yandex.ru
+            </p>
+            <p class="footer__contact-item">
+              <i class="fas fa-map-marker-alt"></i> г. Липецк, ул. Гагарина,
+              93-46
+            </p>
+            <p class="footer__contact-item">ООО «Цифровая земля»</p>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__links-title">Документы</h4>
+            <a href="privacy-policy.html" class="footer__link"
+              >Политика конфиденциальности</a
+            >
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__copyright">
+            © 2025 ООО «Цифровая земля». Все права защищены.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Модальное окно обратной связи -->
+    <div class="side-modal-overlay" id="contactModal">
+      <div class="side-modal">
+        <div class="side-modal-header">
+          <h3 class="side-modal-title">Связаться с нами</h3>
+          <button class="side-modal-close" id="closeModalBtn">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div class="side-modal-body">
+          <form
+            id="contactForm"
+            action="https://formspree.io/f/xaqpvjej"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Новая заявка с сайта Твой Путь"
+            />
+            <div class="form-group">
+              <input
+                class="custom-input__field"
+                type="text"
+                name="name"
+                placeholder="Ваше имя"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input
+                class="custom-input__field"
+                type="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <textarea
+                class="custom-input__field"
+                name="message"
+                placeholder="Ваше сообщение"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <div class="form-group form__group--consent">
+              <label class="consent-label">
+                <input
+                  type="checkbox"
+                  name="consent"
+                  id="modalConsent"
+                  required
+                  class="consent-checkbox"
+                />
+                <span class="consent-checkmark"></span>
+                <span class="consent-text"
+                  >Я соглашаюсь на обработку персональных данных</span
+                >
+              </label>
+            </div>
+            <button
+              type="submit"
+              class="btn btn--primary btn--block"
+              id="modalSubmitBtn"
+              disabled
+            >
+              Отправить
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

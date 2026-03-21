@@ -1,0 +1,27 @@
+# Системные файлы
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Файлы редакторов и IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Логи и временные файлы
+*.log
+*.tmp
+*.temp
+*.cache
+
+# Папки с зависимостями (на случай, если потом появится Node.js)
+node_modules/
+
+# Файлы с локальными настройками
+.env
+.env.local
+
+
+

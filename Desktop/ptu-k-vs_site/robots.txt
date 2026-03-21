@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /thanks.html
+Disallow: /privacy-policy.html
+Disallow: /terms.html
+Sitemap: https://putksvobode.ru/sitemap.xml
